@@ -43,7 +43,7 @@ public class MeineKlausurnote extends javax.swing.JFrame {
                         
                         for(int i = 0; i < values.length && killSwitch; i++){
                           if(percentage >= values[i][0]){
-                            mark.setText(String.valueOf(values[i][1]));
+                            grade.setText(String.valueOf(values[i][1]));
                             killSwitch = false;
                           }
                         }
@@ -69,7 +69,7 @@ public class MeineKlausurnote extends javax.swing.JFrame {
         ownPoints = new javax.swing.JTextField();
         maxPoints = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        mark = new javax.swing.JTextField();
+        grade = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -108,7 +108,7 @@ public class MeineKlausurnote extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mark, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(grade, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -128,7 +128,7 @@ public class MeineKlausurnote extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(mark, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(grade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31))
         );
 
@@ -173,7 +173,7 @@ public class MeineKlausurnote extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField mark;
+    private javax.swing.JTextField grade;
     private javax.swing.JTextField maxPoints;
     private javax.swing.JTextField ownPoints;
 }

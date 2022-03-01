@@ -39,10 +39,12 @@ public class MeineKlausurnote extends javax.swing.JFrame {
                         
                         double[][] values = {{94.9, 1.0,}, {89.5, 1.3}, {84.3, 1.7}, {79.0, 2.0}, {73.7, 2.3}, {68.2, 2.7}, {63.1, 3.0}, {57.9, 3.3}, {52.6, 3.7}, {50.1, 4.0}, {0, 5.0}};
                           
-                        for (double[] value : values) {
-                          if(percentage >= value[0]){
-                            mark.setText(String.valueOf(value[1]));
-                            continue;
+                        boolean killSwitch = true;
+                        
+                        for(int i = 0; i < values.length && killSwitch; i++){
+                          if(percentage >= values[i][0]){
+                            mark.setText(String.valueOf(values[i][1]));
+                            killSwitch = false;
                           }
                         }
                         

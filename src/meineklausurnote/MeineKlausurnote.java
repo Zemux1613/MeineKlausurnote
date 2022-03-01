@@ -37,63 +37,13 @@ public class MeineKlausurnote extends javax.swing.JFrame {
                         
                         double percentage = ((100.0 / maxPoints) * points);
                         
-                        System.out.println(percentage);
-                        
-                        if(percentage > 94.9){
-                            
-                            mark.setText("1.0");
+                        double[][] values = {{94.9, 1.0,}, {89.5, 1.3}, {84.3, 1.7}, {79.0, 2.0}, {73.7, 2.3}, {68.2, 2.7}, {63.1, 3.0}, {57.9, 3.3}, {52.6, 3.7}, {50.1, 4.0}, {0, 5.0}};
+                          
+                        for (double[] value : values) {
+                          if(percentage >= value[0]){
+                            mark.setText(String.valueOf(value[1]));
                             continue;
-                            
-                        } else if(percentage >= 89.5){
-                            
-                            mark.setText("1.3");
-                            continue;
-                            
-                        } else if(percentage >= 84.3){
-                            
-                            mark.setText("1.7");
-                            continue;
-                            
-                        } else if(percentage >= 79.0){
-                            
-                            mark.setText("2.0");
-                            continue;
-                            
-                        } else if(percentage >= 73.7){
-                            
-                            mark.setText("2.3");
-                            continue;
-                            
-                        } else if(percentage >= 68.2){
-                            
-                            mark.setText("2.7");
-                            continue;
-                            
-                        } else if(percentage >= 63.1){
-                            
-                            mark.setText("3.0");
-                            continue;
-                            
-                        } else if(percentage >= 57.9){
-                            
-                            mark.setText("3.3");
-                            continue;
-                            
-                        } else if(percentage >= 52.6){
-                            
-                            mark.setText("3.7");
-                            continue;
-                            
-                        } else if(percentage >= 50.0){
-                            
-                            mark.setText("4.0");
-                            continue;
-                            
-                        } else {
-                            
-                            mark.setText("5.0");
-                            continue;
-                            
+                          }
                         }
                         
                     }

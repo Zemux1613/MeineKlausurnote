@@ -77,19 +77,8 @@ public class MeineKlausurnote extends javax.swing.JFrame {
 
         jLabel2.setText("Max. Punktzahl");
 
-        ownPoints.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ownPointsActionPerformed(evt);
-            }
-        });
-
-        maxPoints.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                maxPointsActionPerformed(evt);
-            }
-        });
-
         jLabel3.setText("Note");
+        grade.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -153,7 +153,9 @@ public class MeineKlausurnote extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MeineKlausurnote().setVisible(true);
+                MeineKlausurnote instance = new MeineKlausurnote();
+                instance.setVisible(true);
+                instance.setTitle("Meine Klausurnote");
             }
         });
         
